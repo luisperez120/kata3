@@ -5,8 +5,6 @@
  */
 package kata3;
 
-import sun.awt.windows.WToolkit;
-
 /**
  *
  * @author Luis Pérez
@@ -17,24 +15,9 @@ public class Kata3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Histogram histo = new Histogram();
-        histo.increment("ulpgc.es");
-        histo.increment("ulpgc.es");
-        histo.increment("ulpgc.es");
-        histo.increment("ulpgc.es");
-        histo.increment("uam.es");
-        histo.increment("uam.es");
-        histo.increment("uam.es");
-        histo.increment("uam.es");
-        histo.increment("ull.es");
-        histo.increment("upv.es");
-        histo.increment("upv.es");
-        histo.increment("ull.es");
-        
-        
-        HistogramDisplay dis= new HistogramDisplay(histo);
-        dis.execute();
-                
+        HistogramDisplay histo = new HistogramDisplay();
+        histo.execute();
+        // TODO code application logic here
     }
     
 }
